@@ -1,5 +1,4 @@
 # Estructura de datos
-### Leonardo Contreras Martinez
 
 Este repositorio contiene todas mis actividades y tareas a lo largo de la materia de EDD
 
