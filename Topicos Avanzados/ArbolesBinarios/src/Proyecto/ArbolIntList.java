@@ -1,21 +1,21 @@
 package Proyecto;
 
-class Node<E> {
-    E data;
-    Node<E> next;
-    public Node(E data){
+class Node {
+    ArbolInt data;
+    Node next;
+    public Node(ArbolInt data){
         this.data = data;
         next = null;
     }
 }
-public class GenericList<E> {
+public class ArbolIntList {
     Node list;
     int index;
-    public GenericList(){
+    public ArbolIntList(){
         list = null;
         index = 0;
     }
-    public void add(E x){
+    public void add(ArbolInt x){
         Node nu = new Node(x);
         if(list == null){
             list = nu;
@@ -34,17 +34,13 @@ public class GenericList<E> {
     public ArbolInt getIndex(int i){
         Node q = list;
         if(i == 0){
-            return (ArbolInt) q.data;
+            return q.data;
         }
         for(int j = 0 ; j < i ; j++){
             if(j == i-1){
                 q = q.next;
             }
         }
-        return (ArbolInt) q.data;
-    }
-    public ArbolInt next(){
-        Node q = list;
-
+        return q.data;
     }
 }
